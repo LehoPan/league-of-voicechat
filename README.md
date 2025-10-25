@@ -1,27 +1,15 @@
-# LeagueOfVoicechat
+# League of Voicechat
+Hello! This is a project I made back in 2022 and stored on google drive for whatever reason instead of github. I moved it here into an abandoned repo where I had planned to update it. That was years ago so I decided to dig up the old files and have it here to archive or maybe to update in the future.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+## What is this?
+This was a fun side side project for me and my friends. I didn't learn databases in highschool yet, so I was like "hey, google sheet can save and share data across the internet right," and I made my own system using google sheets haha. 
 
-## Development server
+## How it works
+Anyway it uses OpenCV on a local python program to scan and track your League of Legends minimap and turn it into coordinates.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Then it would send those via google api credentials to a google sheet. All 10 people in the game would be running their own coordinate publisher locally. 
 
-## Code scaffolding
+They would also be in the same special discord server. This server has a special bot with admin permissions to move people around calls. It would read the data from the google sheet, and move the corresponding user assigned to that role around 5 different voicechats, pertaining to each area of the Summoner's Rift. Also before the match started you would need to tell the bot which discord tag was in which role on which side.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Duct Tape and Dreams
+Yeah imma be honest this thing is jank, and held together by literal packaging tape. But it was just for me an my friends to have like a semi-proximity chat for custom games. I actually messaged a support ticket when I previously planned to update this project when Riot Vanguard was ported to League from Valorant, and they said something vague and I didn't want to get banned for making the proximity chat so maybe that's why I never got around to doing it. Anyway this is obviously missing a credentials file, and also a google api token for the discord bot code in `Bot Code.py`. I'll put in a sample of all the stuff just if anyone evers stumbles across and is like "nah i wanna get this thing working again" haha. Cheers - Leo
